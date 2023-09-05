@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import Layout from './Layout'
 
 function App() {
 
   return (
-    <div className="">
-      <h1 className='text-green-700 text-center'>Hello World</h1>
+    <div className="font-roboto">
+      <Layout />
     </div>
   )
 }
