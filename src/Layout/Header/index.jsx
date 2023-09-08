@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ open, setOpen }) => {
   const links = [
     {
       name: "Network Installation",
@@ -44,15 +44,20 @@ const Header = () => {
 
   const [currentLink, setCurrentLink] = useState(null)
   const headerRef = useRef(null)
+  const headerRefMobile = useRef(null)
 
   useEffect(() => {
     // Add a click event listener to the document
     const handleClickOutside = (event) => {
       if (headerRef.current && !headerRef.current.contains(event.target)) {
         // Click occurred outside the header, set currentLink to null
-        setCurrentLink(null);
+        setCurrentLink(null)
       }
-    };
+      if (headerRefMobile.current && !headerRefMobile.current.contains(event.target)) {
+        // Click occurred outside the header, set currentLink to null
+        setOpen(false)
+      }
+    }
 
     // Attach the event listener when the component mounts
     document.addEventListener('click', handleClickOutside);
@@ -60,8 +65,8 @@ const Header = () => {
     // Clean up the event listener when the component unmounts
     return () => {
       document.removeEventListener('click', handleClickOutside);
-    };
-  }, [])
+    }
+  }, [open, setOpen])
 
   const handleClick = (index) => {
     if (currentLink === null) setCurrentLink(index)
@@ -76,8 +81,8 @@ const Header = () => {
 
   return (
     <div className='w-full'>
-      <div className="h-8 bg-gradient-to-b from-[#01042E] to-[#080B34] via-[#040730]"></div>
-      <div className="bg-gradient-to-b from-[#01042C] to-[#01032A]">
+      <div className="hidden lg:block h-8 bg-gradient-to-b from-[#01042E] to-[#080B34] via-[#040730]"></div>
+      <div className="hidden lg:block bg-gradient-to-b from-[#01042C] to-[#01032A] -my-1">
         <div className="max-w-7xl mx-auto flex justify-between text-white">
           <div className='flex gap-5'>
             <div className="relative w-20 h-20">
@@ -106,6 +111,37 @@ const Header = () => {
             <Link to="/" className='flex h-fit rounded-md overflow-hidden'><span className='flex justify-center items-center bg-[#2958FF] px-2 py-1'>Store</span ><span className='flex justify-center items-center bg-[#FDD10E] px-4 py-1'><img src="/assets/icons/store.svg" alt="store" className='w-4 h-4' /></span></Link>
             <Link to="/" className='py-2 flex h-fit'><img src="/assets/icons/cart.svg" alt="store" className='w-5 h-5' /></Link>
             <Link to="/" className='py-2 flex h-fit'><img src="/assets/icons/user.svg" alt="store" className='w-5 h-5' /></Link>
+          </div>
+        </div>
+      </div>
+      <div className="lg:hidden bg-[#FFFFFF] py-2 px-2 flex flex-col h-screen relative">
+        <div className="flex justify-between items-center">
+          <div className="h-10 w-10 bg-pink-200"></div>
+          <div onClick={() => setOpen(!open)} className="bg-[rgba(255,255,255,1)] shadow-[0_0_40px_0_rgba(0,0,0,0.15)] h-9 w-9 rounded-md flex flex-col gap-[6px] justify-center items-center">
+            <div className={`w-5 h-[2px] rounded-full bg-[rgba(32,32,32,1)] transition-all duration-300 ${open && 'rotate-45 w-7'}`}></div>
+            <div className={`w-5 h-[2px] rounded-full bg-[rgba(32,32,32,1)] transition-all duration-300 ${open && 'hidden'}`}></div>
+            <div className={`w-5 h-[2px] rounded-full bg-[rgba(32,32,32,1)] transition-all duration-300 ${open && '-rotate-45 w-7 -mt-[8px] -ml-[1px]'}`}></div>
+          </div>
+        </div>
+        <div className=" bg-opacity-20 flex items-center justify-center px-2">
+          <div className={`fixed inset-0 top-14 flex-1 transition-all delay-150 bg-gradient-to-b from-[#01042C] to-[#01032A] text-white h-full w-4/5 ${open ? 'left-0' : '-left-[100vw]'}`}>
+            <ul className="flex flex-col gap-4 pt-3 px-2">
+              {links.map((link, index) => (
+                <li
+                  key={link.name}
+                  onClick={handleClose}
+                >
+                  {link.child ?
+                    <button onClick={() => handleClick(index)} className='capitalize flex gap-1 items-center'>{link.name} {link.child && <img src="/assets/icons/arrow.svg" alt="store" className={`w-3 h-3 pt-1 transition-all ${currentLink === index ? 'rotate-180' : ''}`} />}</button> :
+                    <Link to={link.link} onClick={() => setCurrentLink(null)} className='capitalize flex gap-1 items-center'>{link.name}</Link>}
+                  <ul className={`mt-2 flex flex-col transition-opacity duration-500 ${currentLink === index ? 'opacity-100' : 'opacity-0'}`}>
+                    {link?.child?.map(childLink => (
+                      <Link onClick={() => setCurrentLink(null)} key={childLink.name} to={childLink.link} className={`py-2 px-2 hover:bg-pink-600 ${currentLink === index ? 'block' : 'hidden'}`}>{childLink.name}</Link>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
