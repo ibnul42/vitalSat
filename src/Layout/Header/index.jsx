@@ -79,6 +79,23 @@ const Header = ({ open, setOpen }) => {
     if (e.target.id) setCurrentLink(null)
   }
 
+  const [currentItems, setCurrentItems] = useState(null)
+  const [currentIndex, setCurrentIndex] = useState(null)
+
+  const handleClickMobile = (link, index) => {
+    if (currentIndex === null) {
+      setCurrentIndex(index)
+      setCurrentItems(link.child)
+    }
+    else if (currentIndex === index) {
+      setCurrentIndex(null)
+      setCurrentItems(null)
+    } else {
+      setCurrentIndex(index)
+      setCurrentItems(link.child)
+    }
+  }
+
   return (
     <div className='w-full'>
       <div className="hidden lg:block h-8 bg-gradient-to-b from-[#01042E] to-[#080B34] via-[#040730]"></div>
@@ -114,31 +131,32 @@ const Header = ({ open, setOpen }) => {
           </div>
         </div>
       </div>
-      <div className="lg:hidden bg-[#FFFFFF] py-2 px-2 flex flex-col h-screen relative">
-        <div className="flex justify-between items-center">
+      <div className="lg:hidden bg-[#FFFFFF] py-2 flex flex-col z-50">
+        <div className="flex justify-between items-center px-2">
           <div className="h-10 w-10 bg-pink-200"></div>
-          <div onClick={() => setOpen(!open)} className="bg-[rgba(255,255,255,1)] shadow-[0_0_40px_0_rgba(0,0,0,0.15)] h-9 w-9 rounded-md flex flex-col gap-[6px] justify-center items-center">
+          <div onClick={() => setOpen(!open)} className="bg-[rgba(255,255,255,1)] shadow-[0_0_40px_0_rgba(0,0,0,0.15)] h-9 w-9 rounded-md flex flex-col gap-[6px] justify-center items-center cursor-pointer">
             <div className={`w-5 h-[2px] rounded-full bg-[rgba(32,32,32,1)] transition-all duration-300 ${open && 'rotate-45 w-7'}`}></div>
             <div className={`w-5 h-[2px] rounded-full bg-[rgba(32,32,32,1)] transition-all duration-300 ${open && 'hidden'}`}></div>
             <div className={`w-5 h-[2px] rounded-full bg-[rgba(32,32,32,1)] transition-all duration-300 ${open && '-rotate-45 w-7 -mt-[8px] -ml-[1px]'}`}></div>
           </div>
         </div>
-        <div className=" bg-opacity-20 flex items-center justify-center px-2">
-          <div className={`fixed inset-0 top-14 flex-1 transition-all delay-150 bg-gradient-to-b from-[#01042C] to-[#01032A] text-white h-full w-4/5 ${open ? 'left-0' : '-left-[100vw]'}`}>
+        <div className="relative flex items-center justify-center">
+          <div className={`absolute top-1 flex-1 transition-all delay-150 bg-gradient-to-b from-[#01042C] to-[#01032A] text-white h-full w-full ${open ? 'h-screen left-0' : '-left-[100vw]'}`}>
             <ul className="flex flex-col gap-4 pt-3 px-2">
               {links.map((link, index) => (
                 <li
                   key={link.name}
-                  onClick={handleClose}
                 >
                   {link.child ?
-                    <button onClick={() => handleClick(index)} className='capitalize flex gap-1 items-center'>{link.name} {link.child && <img src="/assets/icons/arrow.svg" alt="store" className={`w-3 h-3 pt-1 transition-all ${currentLink === index ? 'rotate-180' : ''}`} />}</button> :
-                    <Link to={link.link} onClick={() => setCurrentLink(null)} className='capitalize flex gap-1 items-center'>{link.name}</Link>}
-                  <ul className={`mt-2 flex flex-col transition-opacity duration-500 ${currentLink === index ? 'opacity-100' : 'opacity-0'}`}>
-                    {link?.child?.map(childLink => (
-                      <Link onClick={() => setCurrentLink(null)} key={childLink.name} to={childLink.link} className={`py-2 px-2 hover:bg-pink-600 ${currentLink === index ? 'block' : 'hidden'}`}>{childLink.name}</Link>
-                    ))}
-                  </ul>
+                    <button onClick={() => handleClickMobile(link, index)} className='capitalize flex gap-1 items-center'>{link.name} {link.child && <img src="/assets/icons/arrow.svg" alt="store" className={`w-3 h-3 pt-1 transition-all ${currentIndex === index ? 'rotate-180' : ''}`} />}</button> :
+                    <Link to={link.link} onClick={() => setCurrentIndex(null)} className='capitalize flex gap-1 items-center'>{link.name}</Link>}
+                  {currentIndex === index &&
+                    <ul className={`mt-2 flex flex-col transition-opacity duration-500`}>
+                      {currentItems.map(childLink => (
+                        <Link onClick={() => setCurrentIndex(null)} key={childLink.name} to={childLink.link} className={`py-2 px-2 hover:bg-pink-600`}>{childLink.name}</Link>
+                      ))}
+                    </ul>
+                    }
                 </li>
               ))}
             </ul>

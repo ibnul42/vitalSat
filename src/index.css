@@ -5,3 +5,13 @@
 .font-source {
   font-family: "Source Sans Pro";
 }
+
+.text_gradient{
+  /* font-family: "Source Sans Pro"; */
+  font-weight: 700;
+  /* line-height: 66px; */
+  background: linear-gradient(45deg, rgba(27, 176, 190, 1), rgba(41, 88, 255, 1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
