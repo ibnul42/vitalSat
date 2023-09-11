@@ -5,11 +5,11 @@ const Header = ({ open, setOpen }) => {
   const links = [
     {
       name: "Network Installation",
-      link: "/",
+      link: "/network-intallation",
       child: [
-        { name: "Network Installation 1", link: "/network1" },
-        { name: "Network Installation 2", link: "/network2" },
-        { name: "Network Installation 3", link: "/network3" }
+        { name: "Network Installation 1", link: "/network-intallation" },
+        { name: "Network Installation 2", link: "/network-intallation" },
+        { name: "Network Installation 3", link: "/network-intallation" }
       ]
     },
     {
