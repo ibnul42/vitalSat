@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSection from '../../components/HeroSection'
 import Accordion from '../../components/Accordion'
+import { Link } from 'react-router-dom'
 
 const services = [
   {
@@ -44,7 +45,7 @@ const Home = () => {
       <div className="bg-[#00032E]">
         <div className="max-w-7xl mx-auto px-2 py-10 md:py-12">
           <div className="space-y-4">
-            <p className='fotext-center font-semibold py-1'>Our Services</p>
+            <p className='text-[#FDD10E] text-center font-semibold py-1'>Our Services</p>
             <p className='text_gradient text-xl md:text-3xl lg:text-4xl flex flex-col items-center'><span>We Provide the Best</span> <span>Service Ubiquiti Unifi network</span></p>
           </div>
           <div className="hidden md:flex flex-wrap justify-between my-5">
@@ -202,7 +203,7 @@ const Home = () => {
             <div className="w-full max-w-5xl py-5 md:py-10">
               <img src="/assets/demo.png" className='aspect-video w-full' alt="demo" />
             </div>
-            <button className='capitalize bg-[#2958FF] hover:bg-[#0c30b3] transition-all px-6 py-3 rounded-md text-white'>contact us today</button>
+            <Link to='/' className='capitalize bg-[#2958FF] hover:bg-[#0c30b3] transition-all px-6 py-3 rounded-md text-white'>contact us today</Link>
           </div>
           <div className="space-y-3 flex flex-col items-center">
             <p className='text-xl md:text-3xl lg:text-4xl flex flex-col items-center text-[#011148] font-bold'>Security</p>
@@ -210,7 +211,7 @@ const Home = () => {
             <div className="w-full max-w-5xl py-5 md:py-10">
               <img src="/assets/demo.png" className='aspect-video w-full' alt="demo" />
             </div>
-            <button className='capitalize bg-[#2958FF] hover:bg-[#0c30b3] transition-all px-6 py-3 rounded-md text-white'>contact us today</button>
+            <Link to='/' className='capitalize bg-[#2958FF] hover:bg-[#0c30b3] transition-all px-6 py-3 rounded-md text-white'>contact us today</Link>
           </div>
           <div className="space-y-3 flex flex-col items-center">
             <p className='text-xl md:text-3xl lg:text-4xl flex flex-col items-center text-[#011148] font-bold'>Network Installation</p>
@@ -218,7 +219,7 @@ const Home = () => {
             <div className="w-full max-w-5xl py-5 md:py-10">
               <img src="/assets/demo.png" className='aspect-video w-full' alt="demo" />
             </div>
-            <button className='capitalize bg-[#2958FF] hover:bg-[#0c30b3] transition-all px-6 py-3 rounded-md text-white'>contact us today</button>
+            <Link to='/' className='capitalize bg-[#2958FF] hover:bg-[#0c30b3] transition-all px-6 py-3 rounded-md text-white'>contact us today</Link>
           </div>
 
         </div>

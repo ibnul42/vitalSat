@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = ({ open, setOpen }) => {
+  const navigate = useNavigate()
   const links = [
     {
       name: "Network Installation",
@@ -16,9 +17,9 @@ const Header = ({ open, setOpen }) => {
       name: "Security",
       link: "/",
       child: [
-        { name: "Security 1", link: "/security1" },
-        { name: "Security 2", link: "/security2" },
-        { name: "Security 3", link: "/security3" }
+        { name: "Security 1", link: "/security-network" },
+        { name: "Security 2", link: "/security-network" },
+        { name: "Security 3", link: "/security-network" }
       ]
     },
     {
@@ -43,6 +44,8 @@ const Header = ({ open, setOpen }) => {
   ]
 
   const [currentLink, setCurrentLink] = useState(null)
+  const [currentItems, setCurrentItems] = useState(null)
+  const [currentIndex, setCurrentIndex] = useState(null)
   const headerRef = useRef(null)
   const headerRefMobile = useRef(null)
 
@@ -79,9 +82,6 @@ const Header = ({ open, setOpen }) => {
     if (e.target.id) setCurrentLink(null)
   }
 
-  const [currentItems, setCurrentItems] = useState(null)
-  const [currentIndex, setCurrentIndex] = useState(null)
-
   const handleClickMobile = (link, index) => {
     if (currentIndex === null) {
       setCurrentIndex(index)
@@ -96,6 +96,10 @@ const Header = ({ open, setOpen }) => {
     }
   }
 
+  const logoClickHandler = () => {
+    navigate('/')
+  }
+
   return (
     <div className='w-full'>
       <div className="hidden lg:block h-8 bg-gradient-to-b from-[#01042E] to-[#080B34] via-[#040730]"></div>
@@ -103,7 +107,11 @@ const Header = ({ open, setOpen }) => {
         <div className="max-w-7xl mx-auto flex justify-between text-white">
           <div className='flex gap-5'>
             <div className="relative w-20 h-20">
-              <div className="absolute left-0 -top-4 w-full h-full bg-white"></div>
+              <div onClick={logoClickHandler} className="absolute left-0 -top-4 w-full h-full cursor-pointer">
+                <video className="logo-video" autoPlay muted loop='true'>
+                  <source src="/assets/animated_logo.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
             <ul className="flex gap-4 pt-3" ref={headerRef}>
               {links.map((link, index) => (
@@ -156,14 +164,14 @@ const Header = ({ open, setOpen }) => {
                         <Link onClick={() => setCurrentIndex(null)} key={childLink.name} to={childLink.link} className={`py-2 px-2 hover:bg-pink-600`}>{childLink.name}</Link>
                       ))}
                     </ul>
-                    }
+                  }
                 </li>
               ))}
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
