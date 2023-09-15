@@ -31,7 +31,7 @@ const Header = ({ open, setOpen }) => {
         { name: "EoT 3", link: "/eot3" }
       ]
     },
-    { name: "broadband", link: "/broadband" },
+    { name: "broadband", link: "/broadband-network" },
     {
       name: "courses",
       link: "/",

@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['Roboto', 'sans'],
+        roboto: ['Roboto', 'sans-serif'],
+        rubik: ['Rubik', 'sans-serif']
       }
     },
   },
