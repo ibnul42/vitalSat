@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import NetworkInstallation from '../../Pages/NetworkInstallation'
 import SecurityNetwork from '../../Pages/SecurityNetwork'
 import BroadbandNetwork from '../../Pages/BroadbandNetwork'
+import EotbandNetwork from '../../Pages/EotNetwork'
 
 
 const Content = () => {
@@ -15,6 +16,7 @@ const Content = () => {
       <Route path="/network-intallation" element={<NetworkInstallation />} />
       <Route path="/security-network" element={<SecurityNetwork />} />
       <Route path="/broadband-network" element={<BroadbandNetwork />} />
+      <Route path="/eot-network" element={<EotbandNetwork />} />
     </Routes>
   )
 }

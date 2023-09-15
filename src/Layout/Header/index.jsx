@@ -26,9 +26,9 @@ const Header = ({ open, setOpen }) => {
       name: "EoT",
       link: "/",
       child: [
-        { name: "EoT 1", link: "/eot1" },
-        { name: "EoT 2", link: "/eot2" },
-        { name: "EoT 3", link: "/eot3" }
+        { name: "EoT 1", link: "/eot-network" },
+        { name: "EoT 2", link: "/eot-network" },
+        { name: "EoT 3", link: "/eot-network" }
       ]
     },
     { name: "broadband", link: "/broadband-network" },
