@@ -8,7 +8,9 @@ export default {
     extend: {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
-        rubik: ['Rubik', 'sans-serif']
+        rubik: ['Rubik', 'sans-serif'],
+        source: ['Source Sans 3', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       }
     },
   },

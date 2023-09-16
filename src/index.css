@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-source {
+/* .font-source {
   font-family: "Source Sans Pro";
-}
+} */
 
 .text_gradient{
   /* font-family: "Source Sans Pro"; */
