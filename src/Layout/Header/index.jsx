@@ -117,7 +117,7 @@ const Header = ({ open, setOpen }) => {
         <div className={`max-w-7xl mx-auto flex justify-between ${whitebackground ? 'text-black' : 'text-white'}`}>
           <div className='flex gap-5'>
             <div className="relative w-20 h-20">
-              <div onClick={logoClickHandler} className="absolute left-0 -top-4 w-full h-full cursor-pointer">
+              <div onClick={logoClickHandler} className="absolute left-0 -top-0 w-full h-full cursor-pointer">
                 <video className="logo-video" autoPlay muted loop='true'>
                   <source src="/assets/animated_logo.mp4" type="video/mp4" />
                 </video>
@@ -143,7 +143,7 @@ const Header = ({ open, setOpen }) => {
           </div>
           <div className="flex gap-4 py-2">
             <Link to="/" className='py-1 h-fit px-2'>Support</Link>
-            <Link to="/" className='flex h-fit rounded-md overflow-hidden'><span className={`flex justify-center items-center bg-[#2958FF] px-2 py-1 ${whitebackground ? 'text-white' : 'text-black'}`}>Store</span ><span className='flex justify-center items-center bg-[#FDD10E] px-4 py-1'><img src="/assets/icons/store.svg" alt="store" className='w-4 h-4' /></span></Link>
+            <Link to="/store" className='flex h-fit rounded-md overflow-hidden'><span className={`flex justify-center items-center bg-[#2958FF] px-2 py-1 ${whitebackground ? 'text-white' : 'text-black'}`}>Store</span ><span className='flex justify-center items-center bg-[#FDD10E] px-4 py-1'><img src="/assets/icons/store.svg" alt="store" className='w-4 h-4' /></span></Link>
             <Link to="/" className='py-2 flex h-fit'><img src={`/assets/icons/cart${whitebackground ? '-black' : ''}.svg`} alt="store" className='w-5 h-5' /></Link>
             <Link to="/" className='py-2 flex h-fit'><img src={`/assets/icons/user${whitebackground ? '-black' : ''}.svg`} alt="store" className='w-5 h-5' /></Link>
           </div>

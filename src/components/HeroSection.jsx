@@ -16,7 +16,7 @@ const HeroSection = ({ title, text, options }) => {
                     </div>}
                 <div className="flex-1 flex flex-col justify-end md:justify-start">
                     {text && <p className='text-[#FDD10E] font-semibold py-1'>{text}</p>}
-                    <h1 className='text_gradient font-extrabold text-3xl md:text-4xl lg:text-6xl'>{title}</h1>
+                    {title && <h1 className='text_gradient font-extrabold text-3xl md:text-4xl lg:text-6xl'>{title}</h1>}
                 </div>
             </div>
         </div>

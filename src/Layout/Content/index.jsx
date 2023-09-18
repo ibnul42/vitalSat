@@ -7,6 +7,7 @@ import SecurityNetwork from '../../Pages/SecurityNetwork'
 import BroadbandNetwork from '../../Pages/BroadbandNetwork'
 import EotbandNetwork from '../../Pages/EotNetwork'
 import HotelDeveloper from '../../Pages/HotelDeveloper'
+import Store from '../../Pages/Store'
 
 
 const Content = () => {
@@ -19,6 +20,7 @@ const Content = () => {
       <Route path="/broadband-network" element={<BroadbandNetwork />} />
       <Route path="/eot-network" element={<EotbandNetwork />} />
       <Route path="/hotel-developer" element={<HotelDeveloper />} />
+      <Route path="/store" element={<Store />} />
     </Routes>
   )
 }
