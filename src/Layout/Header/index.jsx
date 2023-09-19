@@ -4,7 +4,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 const Header = ({ open, setOpen }) => {
   const navigate = useNavigate()
   const location = useLocation()
-  console.log(location)
   const links = [
     {
       name: "Network Installation",
@@ -45,17 +44,17 @@ const Header = ({ open, setOpen }) => {
     },
   ]
 
-  
+
   const [currentLink, setCurrentLink] = useState(null)
   const [currentItems, setCurrentItems] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(null)
   const [whitebackground, setWhiteBackground] = useState(false)
   const headerRef = useRef(null)
   const headerRefMobile = useRef(null)
-  
-  const bgwhiteLinks = ['/hotel-developer']
+
+  const bgwhiteLinks = ['hotel-developer', 'product']
   useEffect(() => {
-    if (bgwhiteLinks.includes(location.pathname)) {
+    if (bgwhiteLinks.includes(location.pathname.split('/')[1])) {
       setWhiteBackground(true)
     } else {
       setWhiteBackground(false)
