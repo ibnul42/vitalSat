@@ -5,55 +5,47 @@ import { Link } from 'react-router-dom'
 
 const services = [
   {
-    title: 'Do I have to be at home?',
-    description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+    title: 'What areas do you cover?',
+    description: 'We cover and will attend any business in England Wales or Scotland.'
   },
   {
-    title: 'lorum imsump is a dummy text to check the interace?',
-    description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+    title: 'Do you do work abroad?',
+    description: 'Yes we do. We can provide our expertise globally and can also support and manage our services remotely providing we have installed our UniFi equipment.'
   },
   {
-    title: 'lorum imsump is a dummy text?',
-    description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+    title: 'Do you provide your services to residential customers?',
+    description: 'Yes we do however, the equipment provided is mainly used for business and we do not provide lower rates for residential customers. As the saying goes, you get what you pay for.'
   },
   {
-    title: 'lorum imsump is a dummy text to check the interace?',
-    description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+    title: 'Is your work guaranteed?',
+    description: 'Yes, all our work is guaranteed. We provide a minimum of 12 months warranty on all supplied products and, for customer who purchase their equipment outright, we also provide 12 months free maintenance with discount on our maintenance contract after. For customer who lease equipment from use, we provide remote support for the duration of the contracted term and maintenance on any supplied network or security equipment.'
   },
   {
-    title: 'lorum imsump is a dummy text to check the interace?',
-    description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+    title: 'Can I use your service if someone else has installed our equipment?',
+    description: 'Yes of course, we are happy to resolve any issues you have with your network that another engineer has installed.'
   },
   {
-    title: 'lorum imsump is a dummy text?',
-    description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
-  },
-  {
-    title: 'Is the work supervised?',
-    description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
-  },
-  {
-    title: 'lorum imsump is a dummy text to check the interace?',
-    description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+    title: 'Can you provide a wireless network to cover a large area?',
+    description: 'We certainly can. This is one of our specialties. We can cover large outdoor areas, stadiums, hotels, campsites and everything in-between.  We have a viable solution for every situation.'
   }
 ]
 
 const Home = () => {
   return (
     <div className=''>
-      <HeroSection title={'VitalSAT Ubiquiti Networks Innovative Technologies'} />
+      <HeroSection title={'VSATUi. Network Infrastructure, Data and Security Specialists'} />
       <div className="bg-[#00032E]">
         <div className="max-w-7xl mx-auto px-2 py-10 md:py-12">
           <div className="space-y-4">
             <p className='text-[#FDD10E] text-center font-semibold py-1'>Our Services</p>
-            <p className='text_gradient text-xl md:text-3xl lg:text-4xl flex flex-col items-center'><span>We Provide the Best</span> <span>Service Ubiquiti Unifi network</span></p>
+            <p className='text_gradient text-xl md:text-3xl lg:text-4xl flex flex-col items-center'><span>VitalSAT-UN, Specialists in</span> <span>Ubiquiti UniFi and Edge Equipment</span></p>
           </div>
           <div className="hidden md:flex flex-wrap justify-between my-5">
             <div className="w-fit space-y-2 order-1">
               <p className='text-[rgba(160,188,248,0.2)] text-6xl font-source font-bold text-center'>01</p>
               <div className="relative">
                 <div className="absolute top-0 left-0 w-full h-full flex justify-center">
-                  <p className='text_gradient text-xl text-center -mt-2'>Network Installation</p>
+                  <p className='text_gradient text-xl text-center -mt-2 ml-2'>Network Installation</p>
                 </div>
                 <div className="flex gap-24 items-end py-1 px-6">
                   <img src="/assets/icons/network1.svg" alt="network" className='h-14 w-auto' />
@@ -68,11 +60,11 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <img src="/assets/icons/wireless.svg" alt="wireless" className='h-8 w-8' />
-                  <p className='text_gradient py-1'>Wireless Deployment</p>
+                  <p className='text_gradient py-1'>Wireless</p>
                 </div>
                 <div className="flex flex-col">
                   <img src="/assets/icons/fiber.svg" alt="fiber" className='h-8 w-8 ml-14' />
-                  <p className='text_gradient py-1'>Fibre Optic Networks</p>
+                  <p className='text_gradient py-1'>Fibre Optic</p>
                 </div>
               </div>
             </div>
@@ -91,21 +83,21 @@ const Home = () => {
                   <div className="py-2 flex justify-between text-xs text-center">
                     <div className="flex flex-col items-start pl-4 justify-center">
                       <img src="/assets/icons/ethernet.svg" alt="ethernet" className='h-8 w-8' />
-                      <p className='text_gradient py-1'>UID Solution</p>
+                      <p className='text_gradient py-1'>UID</p>
                     </div>
-                    <div className="flex justify-between gap-2">
+                    <div className="flex justify-between gap-2 w-40 ml-16">
                       <div className="flex flex-col items-center justify-center">
-                        <img src="/assets/icons/wireless.svg" alt="wireless" className='h-8 w-8 ml-4' />
-                        <p className='text_gradient py-1'>Protect with CCTV</p>
+                        <img src="/assets/icons/wireless.svg" alt="wireless" className='h-8 w-8' />
+                        <p className='text_gradient py-1'>CCTV</p>
                       </div>
                       <div className="flex flex-col">
-                        <img src="/assets/icons/fiber.svg" alt="fiber" className='h-8 w-8 ml-8' />
+                        <img src="/assets/icons/fiber.svg" alt="fiber" className='h-8 w-8 ml-2' />
                         <p className='text_gradient py-1'>Door Access</p>
                       </div>
                     </div>
                     <div className="flex flex-col">
-                      <img src="/assets/icons/fiber.svg" alt="fiber" className='h-8 w-8 ml-[68px]' />
-                      <p className='text_gradient py-1'>Ajax Alarming System</p>
+                      <img src="/assets/icons/fiber.svg" alt="fiber" className='h-8 w-8 ml-7' />
+                      <p className='text_gradient py-1'>Security Alarm</p>
                     </div>
                   </div>
                 </div>
@@ -115,21 +107,21 @@ const Home = () => {
               <p className='text-[rgba(160,188,248,0.2)] text-6xl font-source font-bold text-center'>03</p>
               <div className="relative">
                 <div className="absolute top-0 left-0 w-full h-full flex justify-center">
-                  <p className='text_gradient text-xl text-center -mt-2'>EoT</p>
+                  <p className='text_gradient text-xl text-center -mt-2'>Innovative</p>
                 </div>
                 <div className="">
-                  <div className="flex gap-24 items-end py-1 px-6">
+                  <div className="flex gap-28 items-end py-1 px-6">
                     <img src="/assets/icons/eot1.svg" alt="eot" className='h-14 w-auto' />
                     <img src="/assets/icons/eot2.svg" alt="eot" className='h-14 w-auto' />
                   </div>
                   <div className="py-2 flex justify-between text-xs text-center">
                     <div className="flex flex-col items-start pl-4 justify-center">
                       <img src="/assets/icons/ethernet.svg" alt="ethernet" className='h-8 w-8' />
-                      <p className='text_gradient py-1'>Fixed Wire</p>
+                      <p className='text_gradient py-1'>Connect</p>
                     </div>
                     <div className="flex flex-col pr-2">
-                      <img src="/assets/icons/wireless.svg" alt="fiber" className='h-8 w-8 ml-1' />
-                      <p className='text_gradient py-1'>Wireless</p>
+                      <img src="/assets/icons/wireless.svg" alt="fiber" className='h-8 w-8' />
+                      <p className='text_gradient py-1'>Design</p>
                     </div>
                   </div>
                 </div>
@@ -199,7 +191,7 @@ const Home = () => {
         <div className="py-10 space-y-10">
           <div className="space-y-3 flex flex-col items-center">
             <p className='text-xl md:text-3xl lg:text-4xl flex flex-col items-center text-[#011148] font-bold'>Network Installation</p>
-            <p className='max-w-4xl text-center'>Lorem ipsum dolor sit amet consectetur. Massa turpis et felis commodo adipiscing neque dui ut. At nec massa diam ut augue. Mattis semper facilisis dictum odio in lobortis. Pellentesque lectus neque massa at ultrices elit sit habitant. Ut semper vitae ut integer. Tellus interdum sit ultricies fusce ut bibendum a. Ipsum turpis nisl.</p>
+            <p className='max-w-4xl text-center'>VSATUi specialists in ethernet and fibre optic networks. Providing professional network solutions for businesses across the UK. Enhanced network security monitoring and service management which can seamlessly integrate with Protect and UID products. Regardless of the size of your project, we provide the complete service from design to installation, maintenance, support and network management. With a large customer base from giant corporate clients to small high street shops, we cater to every client’s needs and expectations. Even our competitor use us!</p>
             <div className="w-full max-w-5xl py-5 md:py-10">
               <img src="/assets/demo.png" className='aspect-video w-full' alt="demo" />
             </div>
@@ -207,15 +199,7 @@ const Home = () => {
           </div>
           <div className="space-y-3 flex flex-col items-center">
             <p className='text-xl md:text-3xl lg:text-4xl flex flex-col items-center text-[#011148] font-bold'>Security</p>
-            <p className='max-w-4xl text-center'>Lorem ipsum dolor sit amet consectetur. Massa turpis et felis commodo adipiscing neque dui ut. At nec massa diam ut augue. Mattis semper facilisis dictum odio in lobortis. Pellentesque lectus neque massa at ultrices elit sit habitant. Ut semper vitae ut integer. Tellus interdum sit ultricies fusce ut bibendum a. Ipsum turpis nisl.</p>
-            <div className="w-full max-w-5xl py-5 md:py-10">
-              <img src="/assets/demo.png" className='aspect-video w-full' alt="demo" />
-            </div>
-            <Link to='/' className='capitalize bg-[#2958FF] hover:bg-[#0c30b3] transition-all px-6 py-3 rounded-md text-white'>contact us today</Link>
-          </div>
-          <div className="space-y-3 flex flex-col items-center">
-            <p className='text-xl md:text-3xl lg:text-4xl flex flex-col items-center text-[#011148] font-bold'>Network Installation</p>
-            <p className='max-w-4xl text-center'>Lorem ipsum dolor sit amet consectetur. Massa turpis et felis commodo adipiscing neque dui ut. At nec massa diam ut augue. Mattis semper facilisis dictum odio in lobortis. Pellentesque lectus neque massa at ultrices elit sit habitant. Ut semper vitae ut integer. Tellus interdum sit ultricies fusce ut bibendum a. Ipsum turpis nisl.</p>
+            <p className='max-w-4xl text-center'>Along side our network security, we also provide robust and reliable security for our client’s buildings. Seamlessly integrate UniFi protect in to your existing UniFi network or, we can install the system as a stand-alone service. This combined with our security alarm system will provide you with an instant alert if there is any unauthorised access. Combined with UID will also allow you to remotely lock your building preventing any intruder from escaping while the police are on their way. </p>
             <div className="w-full max-w-5xl py-5 md:py-10">
               <img src="/assets/demo.png" className='aspect-video w-full' alt="demo" />
             </div>

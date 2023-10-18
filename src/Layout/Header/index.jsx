@@ -5,22 +5,49 @@ const Header = ({ open, setOpen }) => {
   const navigate = useNavigate()
   const location = useLocation()
   const links = [
-    { name: "UniFi Gateway Console", link: "/network-intallation" },
-    { name: "Wifi", link: "/wifi" },
-    { name: "Switching", link: "/eot-network" },
-    { name: "Cameras & Security", link: "/security-network" },
-    { name: "New integrations", link: "/new-integrations" },
-    { name: "accessory tech", link: "/" },
-    { name: "Identity", link: "/identity" }
-    // {
-    //   name: "Network Installation",
-    //   link: "/network-intallation",
-    //   child: [
-    //     { name: "Network Installation 1", link: "/network-intallation" },
-    //     { name: "Network Installation 2", link: "/network-intallation" },
-    //     { name: "Network Installation 3", link: "/network-intallation" }
-    //   ]
-    // }
+    // { name: "UniFi Gateway Console", link: "/network-intallation" },
+    // { name: "Wifi", link: "/wifi" },
+    // { name: "Switching", link: "/eot-network" },
+    // { name: "Cameras & Security", link: "/security-network" },
+    // { name: "New integrations", link: "/new-integrations" },
+    // { name: "accessory tech", link: "/" },
+    // { name: "Identity", link: "/identity" }
+    {
+      name: "Network Installation",
+      link: "/network-intallation",
+      child: [
+        { name: "Ethernet", link: "/network-intallation" },
+        { name: "Wireless", link: "/network-wireless" },
+        { name: "Fibre Optic", link: "/network-fibre" }
+      ]
+    },
+    {
+      name: "Security",
+      link: "/security",
+      child: [
+        { name: "UID", link: "/uid-network" },
+        { name: "Protect", link: "/protect-network" },
+        { name: "Door Access", link: "/door-network" },
+        { name: "Alarm System", link: "/alarm-network" },
+      ]
+    },
+    {
+      name: "Broadband",
+      link: "/broadband",
+      child: [
+        { name: "Fixed & Wireless", link: "/broadband-network" },
+      ]
+    },
+    {
+      name: "EoT",
+      link: "/eot",
+      child: [
+        { name: "Unifi Connect", link: "/eotnetwork" },
+      ]
+    },
+    { name: "Hotels & Developers", link: "/hotel-developer" },
+    { name: "Training", link: "/training" },
+    { name: "About Us", link: "/about" },
   ]
 
 
@@ -93,13 +120,13 @@ const Header = ({ open, setOpen }) => {
       <div className={`hidden xl:block h-8 ${whitebackground ? 'bg-white' : 'bg-gradient-to-b'} from-[#01042E] to-[#080B34] via-[#040730]`}></div>
       <div className={`hidden xl:block ${whitebackground ? 'bg-white' : 'bg-gradient-to-b'} from-[#01042C] to-[#01032A] -my-1`}>
         <div className={`max-w-7xl mx-auto flex justify-between ${whitebackground ? 'text-black' : 'text-white'}`}>
-          <div className='flex gap-5'>
-            <div className="relative px-5">
+          <div className='flex gap-5 h-full'>
+            <div className="relative px-5 w-28">
               <div onClick={logoClickHandler} className="absolute left-0 -top-0 w-full h-full flex justify-center items-center cursor-pointer">
-                {/* <video className="logo-video" autoPlay muted loop='true'>
+                <video className="logo-video mb-2" autoPlay muted loop='true'>
                   <source src="/assets/animated_logo.mp4" type="video/mp4" />
-                </video> */}
-                <p className='-mt-2 font-extrabold'>Logo</p>
+                </video>
+                {/* <p className='-mt-2 font-extrabold'>Logo</p> */}
               </div>
             </div>
             <ul className="flex gap-4 pt-3" ref={headerRef}>
@@ -112,7 +139,7 @@ const Header = ({ open, setOpen }) => {
                     <button onClick={() => handleClick(index)} className='capitalize flex gap-1 items-center'>{link.name} {link.child && <img src={`/assets/icons/arrow${whitebackground ? '-black' : ''}.svg`} alt="store" className={`w-3 h-3 pt-1 transition-all ${currentLink === index ? 'rotate-180' : ''}`} />}</button> :
                     <NavLink to={link.link} onClick={() => setCurrentLink(null)}
                       // className='capitalize flex gap-1 items-center hover:text-[rgba(41,88,255,0.7)] transition-all duration-300'
-                      className={({ isActive }) =>  isActive ? "capitalize flex gap-1 items-center text-[rgba(41,88,255,0.7)] transition-all duration-300" : "capitalize flex gap-1 items-center hover:text-[rgba(41,88,255,0.7)] transition-all duration-300" }
+                      className={({ isActive }) => isActive ? "capitalize flex gap-1 items-center text-[rgba(41,88,255,0.7)] transition-all duration-300" : "capitalize flex gap-1 items-center hover:text-[rgba(41,88,255,0.7)] transition-all duration-300"}
                     >{link.name}</NavLink>}
                   <ul className={`absolute mt-2 flex flex-col bg-[#01042E] text-white transition-opacity duration-500 ${currentLink === index ? 'opacity-100' : 'opacity-0'}`}>
                     {link?.child?.map(childLink => (
@@ -133,7 +160,9 @@ const Header = ({ open, setOpen }) => {
       </div>
       <div className="xl:hidden bg-[#FFFFFF] py-2 flex flex-col z-50">
         <div className="flex justify-between items-center px-2">
-          <div className="h-10 w-10 bg-pink-200"></div>
+          <video className="logo-video w-24 -ml-8" autoPlay muted loop='true'>
+            <source src="/assets/animated_logo.mp4" type="video/mp4" />
+          </video>
           <div onClick={() => setOpen(!open)} className="bg-[rgba(255,255,255,1)] shadow-[0_0_40px_0_rgba(0,0,0,0.15)] h-9 w-9 rounded-md flex flex-col gap-[6px] justify-center items-center cursor-pointer">
             <div className={`w-5 h-[2px] rounded-full bg-[rgba(32,32,32,1)] transition-all duration-300 ${open && 'rotate-45 w-7'}`}></div>
             <div className={`w-5 h-[2px] rounded-full bg-[rgba(32,32,32,1)] transition-all duration-300 ${open && 'hidden'}`}></div>
