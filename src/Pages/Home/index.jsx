@@ -209,8 +209,9 @@ const Home = () => {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-2 py-10">
-        <div className="flex justify-center">
-        <img src="/assets/images/question.png" alt="question" className='w-full' />
+        <div className="flex flex-col space-y-5 justify-center items-center">
+        <p className='text-xl md:text-3xl lg:text-4xl flex flex-col items-center text-[#011148] font-bold'>VitalSAT-UN, Specialists in Ubiquiti UniFi & Edge Products</p>
+          <img src="/assets/images/question.png" alt="question" className='w-full' />
         </div>
       </div>
       <div className="bg-[rgba(1,17,72,0.05)]">
