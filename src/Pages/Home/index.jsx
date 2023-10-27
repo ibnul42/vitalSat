@@ -55,7 +55,7 @@ const Home = () => {
               </div>
               <div className="grid grid-cols-3 gap-2 text-xs text-center">
                 <div className="flex flex-col items-start pl-4 justify-center">
-                  <img src="/assets/icons/ethernet.svg" alt="ethernet" className='h-8 w-8' />
+                  <img src="/assets/icons/ethernet.png" alt="ethernet" className='h-8 w-8' />
                   <p className='text_gradient py-1'>Ethernet</p>
                 </div>
                 <div className="flex flex-col items-center justify-center">
@@ -63,7 +63,7 @@ const Home = () => {
                   <p className='text_gradient py-1'>Wireless</p>
                 </div>
                 <div className="flex flex-col">
-                  <img src="/assets/icons/fiber.svg" alt="fiber" className='h-8 w-8 ml-14' />
+                  <img src="/assets/icons/fibre.png" alt="fiber" className='h-8 w-8 ml-14' />
                   <p className='text_gradient py-1'>Fibre Optic</p>
                 </div>
               </div>
@@ -82,7 +82,7 @@ const Home = () => {
                   </div>
                   <div className="py-2 flex justify-between text-xs text-center">
                     <div className="flex flex-col items-start pl-4 justify-center">
-                      <img src="/assets/icons/ethernet.svg" alt="ethernet" className='h-8 w-8' />
+                      <img src="/assets/icons/ethernet.png" alt="ethernet" className='h-8 w-8' />
                       <p className='text_gradient py-1'>UID</p>
                     </div>
                     <div className="flex justify-between gap-2 w-40 ml-16">
@@ -91,12 +91,12 @@ const Home = () => {
                         <p className='text_gradient py-1'>CCTV</p>
                       </div>
                       <div className="flex flex-col">
-                        <img src="/assets/icons/fiber.svg" alt="fiber" className='h-8 w-8 ml-2' />
+                        <img src="/assets/icons/fibre.png" alt="fiber" className='h-8 w-8 ml-2' />
                         <p className='text_gradient py-1'>Door Access</p>
                       </div>
                     </div>
                     <div className="flex flex-col">
-                      <img src="/assets/icons/fiber.svg" alt="fiber" className='h-8 w-8 ml-7' />
+                      <img src="/assets/icons/fibre.png" alt="fiber" className='h-8 w-8 ml-7' />
                       <p className='text_gradient py-1'>Security Alarm</p>
                     </div>
                   </div>
@@ -116,7 +116,7 @@ const Home = () => {
                   </div>
                   <div className="py-2 flex justify-between text-xs text-center">
                     <div className="flex flex-col items-start pl-4 justify-center">
-                      <img src="/assets/icons/ethernet.svg" alt="ethernet" className='h-8 w-8' />
+                      <img src="/assets/icons/ethernet.png" alt="ethernet" className='h-8 w-8' />
                       <p className='text_gradient py-1'>Connect</p>
                     </div>
                     <div className="flex flex-col pr-2">
@@ -134,7 +134,7 @@ const Home = () => {
               <p className='text_gradient text-xl font-source py-2'>Network Installation</p>
               <div className="grid grid-cols-3 gap-5 text-xs text-center">
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
-                  <img src="/assets/icons/ethernet.svg" alt="network" className='ethernet' />
+                  <img src="/assets/icons/ethernet.png" alt="network" className='ethernet' />
                   <p className='text_gradient py-1'>Ethernet</p>
                 </div>
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
@@ -142,7 +142,7 @@ const Home = () => {
                   <p className='text_gradient py-1'>Wireless Deployment</p>
                 </div>
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
-                  <img src="/assets/icons/fiber.svg" alt="fiber" className='' />
+                  <img src="/assets/icons/fibre.png" alt="fiber" className='' />
                   <p className='text_gradient py-1'>Fibre Optic Networks</p>
                 </div>
               </div>
@@ -152,7 +152,7 @@ const Home = () => {
               <p className='text_gradient text-xl font-source py-2'>Security</p>
               <div className="grid grid-cols-3 gap-5 text-xs text-center">
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
-                  <img src="/assets/icons/ethernet.svg" alt="network" className='ethernet' />
+                  <img src="/assets/icons/ethernet.png" alt="network" className='ethernet' />
                   <p className='text_gradient py-1'>UID Solution</p>
                 </div>
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
@@ -160,11 +160,11 @@ const Home = () => {
                   <p className='text_gradient py-1'>Protect with CCTV</p>
                 </div>
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
-                  <img src="/assets/icons/fiber.svg" alt="fiber" className='' />
+                  <img src="/assets/icons/fibre.png" alt="fiber" className='' />
                   <p className='text_gradient py-1'>Door Access</p>
                 </div>
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
-                  <img src="/assets/icons/fiber.svg" alt="fiber" className='' />
+                  <img src="/assets/icons/fibre.png" alt="fiber" className='' />
                   <p className='text_gradient py-1'>Door Access</p>
                 </div>
               </div>
@@ -174,7 +174,7 @@ const Home = () => {
               <p className='text_gradient text-xl font-source py-2'>Network Installation</p>
               <div className="grid grid-cols-3 gap-5 text-xs text-center">
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
-                  <img src="/assets/icons/ethernet.svg" alt="network" className='ethernet' />
+                  <img src="/assets/icons/ethernet.png" alt="network" className='ethernet' />
                   <p className='text_gradient py-1'>Fixed Wire</p>
                 </div>
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
@@ -187,7 +187,7 @@ const Home = () => {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-2 py-10">
-        <p className='text-xl md:text-3xl lg:text-4xl flex flex-col items-center text-[#011148] font-bold'><span>We Provide the Best</span> <span>Service Ubiquiti Unifi network</span></p>
+        <p className='text-xl md:text-3xl lg:text-4xl flex flex-col items-center text-[#011148] font-bold'><span>PC & Data Network Infrastructure</span></p>
         <div className="py-10 space-y-10">
           <div className="space-y-3 flex flex-col items-center">
             <p className='text-xl md:text-3xl lg:text-4xl flex flex-col items-center text-[#011148] font-bold'>Network Installation</p>
@@ -206,6 +206,11 @@ const Home = () => {
             <Link to='/' className='capitalize bg-[#2958FF] hover:bg-[#0c30b3] transition-all px-6 py-3 rounded-md text-white'>contact us today</Link>
           </div>
 
+        </div>
+      </div>
+      <div className="max-w-7xl mx-auto px-2 py-10">
+        <div className="flex justify-center">
+        <img src="/assets/images/question.png" alt="question" className='w-full' />
         </div>
       </div>
       <div className="bg-[rgba(1,17,72,0.05)]">
