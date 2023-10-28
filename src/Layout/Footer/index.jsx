@@ -25,10 +25,10 @@ const Footer = () => {
           <div className="col-span-12 md:col-span-3 lg:col-span-3">
             <h5 className='font-bold text-2xl mb-4 text-[rgba(0,4,46,1)] font-source'>Services</h5>
             <div className="py-2 flex flex-col gap-2">
-              <Link to='/'>Network Installation</Link>
-              <Link to='/'>Security</Link>
-              <Link to='/'>Broadband</Link>
-              <Link to='/'>EoT</Link>
+              <Link to='/network-intallation'>Network Installation</Link>
+              <Link to='/security-network'>Security</Link>
+              <Link to='/broadband-network'>Broadband</Link>
+              <Link to='/eot-network'>EoT</Link>
             </div>
           </div>
           <div className="col-span-12 md:col-span-3 lg:col-span-3">

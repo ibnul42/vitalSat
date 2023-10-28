@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import HeroSection from '../../components/HeroSection'
 import Accordion from '../../components/Accordion'
 import { Link } from 'react-router-dom'
