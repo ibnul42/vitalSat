@@ -34,9 +34,7 @@ const Footer = () => {
           <div className="col-span-12 md:col-span-3 lg:col-span-3">
             <h5 className='font-bold text-2xl mb-4 text-[rgba(0,4,46,1)] font-source'>Sitemap</h5>
             <div className="py-2 flex flex-col gap-2">
-              <Link to='/'>Terms & Conditions</Link>
-              <Link to='/'>Menu Item</Link>
-              <Link to='/'>Menu Item</Link>
+              <Link to='/terms'>Terms & Conditions</Link>
             </div>
           </div>
           {/* <div className="col-span-12 md:col-span-3 lg:col-span-3">
@@ -54,9 +52,9 @@ const Footer = () => {
             <p className='text-center'>Copyright VitalSat Installation</p>
           </div>
           <div className="space-x-5 flex justify-between">
-            <Link to='/'>Privacy Policy</Link>
-            <Link to='/'>Term of Use</Link>
-            <Link to='/'>Partner</Link>
+            <Link to='/terms'>Privacy Policy</Link>
+            <Link to='/terms'>Term of Use</Link>
+            <Link to='/terms'>Partner</Link>
           </div>
         </div>
       </div>
