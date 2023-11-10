@@ -14,15 +14,15 @@ const services = [
   },
   {
     title: 'Do you provide your services to residential customers?',
-    description: 'Yes we do however, the equipment provided is mainly used for business and we do not provide lower rates for residential customers. As the saying goes, you get what you pay for.'
+    description: 'Yes we do however, the equipment provided is business grade and we do not offer a lower rates for residential customers. As the saying goes, you get what you pay for.'
   },
   {
     title: 'Is your work guaranteed?',
-    description: 'Yes, all our work is guaranteed. We provide a minimum of 12 months warranty on all supplied products and, for customer who purchase their equipment outright, we also provide 12 months free maintenance with discount on our maintenance contract after. For customer who lease equipment from use, we provide remote support for the duration of the contracted term and maintenance on any supplied network or security equipment.'
+    description: 'Yes, all our work is guaranteed. We provide a minimum of 12 months warranty on all supplied products and, for customer who purchase their equipment outright from us, we also provide 12 months free maintenance with discount on our maintenance contracts after. For customer who lease equipment from use, we provide remote management for the duration of the contracted term and maintenance on any supplied network or security equipment.'
   },
   {
     title: 'Can I use your service if someone else has installed our equipment?',
-    description: 'Yes of course, we are happy to resolve any issues you have with your network that another engineer has installed.'
+    description: 'Yes of course, we are happy to resolve any issues or faults you are having with your network that another engineer or company has installed.'
   },
   {
     title: 'Can you provide a wireless network to cover a large area?',
@@ -210,8 +210,8 @@ const Home = () => {
       </div>
       <div className="max-w-7xl mx-auto px-2 py-10">
         <div className="flex flex-col space-y-5 justify-center items-center">
-        <p className='text-xl md:text-3xl lg:text-4xl flex flex-col items-center text-[#011148] font-bold'>VitalSAT-UN, Specialists in Ubiquiti UniFi & Edge Products</p>
-          <img src="/assets/images/question.png" alt="question" className='w-full' />
+          <p className='text-xl md:text-3xl lg:text-4xl flex flex-col items-center text-[#011148] font-bold'>VitalSAT-UN, Specialists in Ubiquiti UniFi & Edge Products</p>
+          <img src="/assets/images/question.png" alt="question" className='w-full max-w-2xl' />
         </div>
       </div>
       <div className="bg-[rgba(1,17,72,0.05)]">

@@ -13,7 +13,7 @@ const Header = ({ open, setOpen }) => {
     // { name: "accessory tech", link: "/" },
     // { name: "Identity", link: "/identity" }
     {
-      name: "Network Installation",
+      name: "IT Networking",
       link: "/network-intallation",
       child: [
         { name: "Ethernet", link: "/network-intallation" },
@@ -121,7 +121,7 @@ const Header = ({ open, setOpen }) => {
       <div className={`hidden xl:block ${whitebackground ? 'bg-white' : 'bg-gradient-to-b'} from-[#01042C] to-[#01032A] -my-1`}>
         <div className={`max-w-7xl mx-auto flex justify-between ${whitebackground ? 'text-black' : 'text-white'}`}>
           <div className='flex gap-5 h-full'>
-            <div className="relative px-5 w-28">
+            <div className="relative px-5 w-32">
               <div onClick={logoClickHandler} className="absolute left-0 -top-0 w-full h-full flex justify-center items-center cursor-pointer">
                 <video className="logo-video mb-2" autoPlay muted loop='true'>
                   <source src="/assets/animated_logo.mp4" type="video/mp4" />
