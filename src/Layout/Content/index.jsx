@@ -10,6 +10,8 @@ import HotelDeveloper from '../../Pages/HotelDeveloper'
 import Store from '../../Pages/Store'
 import SingleProduct from '../../Pages/SIngleProduct'
 import TermsConditions from '../../Pages/TermsConditions'
+import Cart from '../../Pages/Cart'
+import ShippingOne from '../../Pages/ShippingOne'
 
 
 const Content = () => {
@@ -23,6 +25,8 @@ const Content = () => {
       <Route path="/eot-network" element={<EotbandNetwork />} />
       <Route path="/hotel-developer" element={<HotelDeveloper />} />
       <Route path="/store" element={<Store />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/shipping-1" element={<ShippingOne />} />
       <Route path="/terms" element={<TermsConditions />} />
       <Route path="/product/:id" element={<SingleProduct />} />
     </Routes>
