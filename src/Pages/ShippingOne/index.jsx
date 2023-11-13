@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const ShippingOne = () => {
     const navigate = useNavigate()
     const checkoutClickHandler = () => {
         navigate('/shipping-1')
+    }
+    const [selectedPlan, setSelectedPlan] = useState('')
+
+    const planClickOption = (val) => {
+        setSelectedPlan(val)
     }
     return (
         <div className='h-auto'>
@@ -58,13 +63,19 @@ const ShippingOne = () => {
                             <p>Please select if you plan to use your products in a residential or business environment</p>
                         </div>
                         <div className="py-3 flex gap-4">
-                            <div className="border border-[#1BB0BE] p-1 rounded w-1/2 cursor-pointer">
-                                <div className="bg-gradient-to-r from-[#1BB0BE] to-[#2958FF] py-3 rounded">
-                                    <p className='text-white text-center'>Residential</p>
+                            <div className="border border-[#1BB0BE] p-1 rounded w-1/2 cursor-pointer" onClick={() => planClickOption('resident')}>
+                                <div className={`${selectedPlan === 'resident' ? 'bg-gradient-to-r from-[#1BB0BE] to-[#2958FF] text-white' : 'bg-white'} py-3 rounded flex items-center justify-center gap-2`}>
+                                    <div className="h-7 w-7 bg-gray-100 rounded-full flex items-center justify-center">
+                                        <img src="/assets/icons/resident.svg" className='w-4 h-auto' alt="home" />
+                                    </div>
+                                    <p className='text-center'>Residential</p>
                                 </div>
                             </div>
-                            <div className="border border-[#1BB0BE] p-1 rounded w-1/2 cursor-pointer">
-                                <div className="bg-white py-3 rounded">
+                            <div className="border border-[#1BB0BE] p-1 rounded w-1/2 cursor-pointer" onClick={() => planClickOption('organization')}>
+                                <div className={`${selectedPlan === 'organization' ? 'bg-gradient-to-r from-[#1BB0BE] to-[#2958FF] text-white' : 'bg-white'} py-3 rounded flex items-center justify-center gap-2`}>
+                                    <div className="h-7 w-7 bg-gray-100 rounded-full flex items-center justify-center">
+                                        <img src="/assets/icons/organization.svg" className='w-4 h-auto' alt="home" />
+                                    </div>
                                     <p className='text-center'>Corporate</p>
                                 </div>
                             </div>
@@ -112,7 +123,7 @@ const ShippingOne = () => {
                             </div>
                         </div>
                         <div className="flex justify-end">
-                        <button onClick={checkoutClickHandler} className='bg-gradient-to-r from-[#1BB0BE] to-[#2958FF] text-white px-8 py-2 rounded max-w-fit'>Next</button>
+                            <button onClick={checkoutClickHandler} className='bg-gradient-to-r from-[#1BB0BE] to-[#2958FF] text-white px-8 py-2 rounded max-w-fit'>Next</button>
                         </div>
                     </div>
                     <div className="col-span-4 text-[rgba(28,28,28,0.75)]">

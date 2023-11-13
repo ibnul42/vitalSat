@@ -2,6 +2,13 @@ import React from 'react'
 import HeroSection from '../../components/HeroSection'
 import Accordion from '../../components/Accordion'
 import { Link } from 'react-router-dom'
+import {FaEthernet} from 'react-icons/fa'
+import {RiWirelessChargingLine} from 'react-icons/ri'
+import {MdOutlineFiberSmartRecord} from 'react-icons/md'
+import { AiOutlineAntDesign, AiOutlineDisconnect, AiOutlineSecurityScan } from 'react-icons/ai'
+import { BiCctv } from 'react-icons/bi'
+import { BsDoorOpenFill } from 'react-icons/bs'
+import { SiApachedruid } from 'react-icons/si'
 
 const services = [
   {
@@ -55,15 +62,18 @@ const Home = () => {
               </div>
               <div className="grid grid-cols-3 gap-2 text-xs text-center">
                 <div className="flex flex-col items-start pl-4 justify-center">
-                  <img src="/assets/icons/ethernet.png" alt="ethernet" className='h-8 w-8' />
+                  {/* <img src="/assets/icons/ethernet.png" alt="ethernet" className='h-8 w-8' /> */}
+                  <FaEthernet className='h-8 w-8 text-white' />
                   <p className='text_gradient py-1'>Ethernet</p>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <img src="/assets/icons/wireless.svg" alt="wireless" className='h-8 w-8' />
+                  {/* <img src="/assets/icons/wireless.svg" alt="wireless" className='h-8 w-8' /> */}
+                  <RiWirelessChargingLine className='h-8 w-8 text-white' />
                   <p className='text_gradient py-1'>Wireless</p>
                 </div>
-                <div className="flex flex-col">
-                  <img src="/assets/icons/fibre.png" alt="fiber" className='h-8 w-8 ml-14' />
+                <div className="flex flex-col items-center pl-10">
+                  {/* <img src="/assets/icons/fibre.png" alt="fiber" className='h-8 w-8 ml-14' /> */}
+                  <MdOutlineFiberSmartRecord className='h-8 w-8 text-white' />
                   <p className='text_gradient py-1'>Fibre Optic</p>
                 </div>
               </div>
@@ -82,21 +92,25 @@ const Home = () => {
                   </div>
                   <div className="py-2 flex justify-between text-xs text-center">
                     <div className="flex flex-col items-start pl-4 justify-center">
-                      <img src="/assets/icons/ethernet.png" alt="ethernet" className='h-8 w-8' />
+                      {/* <img src="/assets/icons/ethernet.png" alt="ethernet" className='h-8 w-8' /> */}
+                      <SiApachedruid className='h-8 w-8 text-white' />
                       <p className='text_gradient py-1'>UID</p>
                     </div>
                     <div className="flex justify-between gap-2 w-40 ml-16">
                       <div className="flex flex-col items-center justify-center">
-                        <img src="/assets/icons/wireless.svg" alt="wireless" className='h-8 w-8' />
+                        {/* <img src="/assets/icons/wireless.svg" alt="wireless" className='h-8 w-8' /> */}
+                        <BiCctv className='h-8 w-8 text-white' />
                         <p className='text_gradient py-1'>CCTV</p>
                       </div>
                       <div className="flex flex-col">
-                        <img src="/assets/icons/fibre.png" alt="fiber" className='h-8 w-8 ml-2' />
+                        {/* <img src="/assets/icons/fibre.png" alt="fiber" className='h-8 w-8 ml-2' /> */}
+                        <BsDoorOpenFill className='h-8 w-8 text-white' />
                         <p className='text_gradient py-1'>Door Access</p>
                       </div>
                     </div>
-                    <div className="flex flex-col">
-                      <img src="/assets/icons/fibre.png" alt="fiber" className='h-8 w-8 ml-7' />
+                    <div className="flex flex-col items-center">
+                      {/* <img src="/assets/icons/fibre.png" alt="fiber" className='h-8 w-8 ml-7' /> */}
+                      <AiOutlineSecurityScan className='h-8 w-8 text-white' />
                       <p className='text_gradient py-1'>Security Alarm</p>
                     </div>
                   </div>
@@ -116,11 +130,13 @@ const Home = () => {
                   </div>
                   <div className="py-2 flex justify-between text-xs text-center">
                     <div className="flex flex-col items-start pl-4 justify-center">
-                      <img src="/assets/icons/ethernet.png" alt="ethernet" className='h-8 w-8' />
+                      {/* <img src="/assets/icons/ethernet.png" alt="ethernet" className='h-8 w-8' /> */}
+                      <AiOutlineDisconnect className='h-8 w-8 text-white' />
                       <p className='text_gradient py-1'>Connect</p>
                     </div>
                     <div className="flex flex-col pr-2">
-                      <img src="/assets/icons/wireless.svg" alt="fiber" className='h-8 w-8' />
+                      {/* <img src="/assets/icons/wireless.svg" alt="fiber" className='h-8 w-8' /> */}
+                      <AiOutlineAntDesign className='h-8 w-8 text-white' />
                       <p className='text_gradient py-1'>Design</p>
                     </div>
                   </div>
