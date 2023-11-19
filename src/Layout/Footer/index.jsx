@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-2 py-5 space-y-5">
         <div className="grid grid-cols-12 gap-4 text-[rgba(28,28,28,0.75)]">
           <div className="col-span-12 md:col-span-5 lg:col-span-3 space-y-2">
-            <img src="/assets/logo.png" alt="logo" className='h-36 w-36' />
+            <img src="/assets/logo.png" alt="logo" className='h-auto w-72' />
             {/* <p>Lorem ipsum dolor sit amet consectetur. Tincidunt egestas condimentum at egestas vel dis sed sagittis. Fusce sagittis malesuada.</p> */}
           </div>
           <div className="col-span-12 md:col-span-4 lg:col-span-4">
