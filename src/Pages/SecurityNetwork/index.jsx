@@ -5,38 +5,30 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const services = [
     {
-        title: 'Do I have to be at home?',
-        description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+      title: 'What areas do you cover?',
+      description: 'We cover and will attend any business in England Wales or Scotland.'
     },
     {
-        title: 'lorum imsump is a dummy text to check the interace?',
-        description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+      title: 'Do you do work abroad?',
+      description: 'Yes we do. We can provide our expertise globally and can also support and manage our services remotely providing we have installed our UniFi equipment.'
     },
     {
-        title: 'lorum imsump is a dummy text?',
-        description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+      title: 'Do you provide your services to residential customers?',
+      description: 'Yes we do however, the equipment provided is business grade and we do not offer a lower rates for residential customers. As the saying goes, you get what you pay for.'
     },
     {
-        title: 'lorum imsump is a dummy text to check the interace?',
-        description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+      title: 'Is your work guaranteed?',
+      description: 'Yes, all our work is guaranteed. We provide a minimum of 12 months warranty on all supplied products and, for customer who purchase their equipment outright from us, we also provide 12 months free maintenance with discount on our maintenance contracts after. For customer who lease equipment from use, we provide remote management for the duration of the contracted term and maintenance on any supplied network or security equipment.'
     },
     {
-        title: 'lorum imsump is a dummy text to check the interace?',
-        description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+      title: 'Can I use your service if someone else has installed our equipment?',
+      description: 'Yes of course, we are happy to resolve any issues or faults you are having with your network that another engineer or company has installed.'
     },
     {
-        title: 'lorum imsump is a dummy text?',
-        description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
-    },
-    {
-        title: 'Is the work supervised?',
-        description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
-    },
-    {
-        title: 'lorum imsump is a dummy text to check the interace?',
-        description: 'It’s not necessary, but you may be at home if you like. Otherwise, you have to leave the keys or code so we can enter your house.'
+      title: 'Can you provide a wireless network to cover a large area?',
+      description: 'We certainly can. This is one of our specialties. We can cover large outdoor areas, stadiums, hotels, campsites and everything in-between.  We have a viable solution for every situation.'
     }
-]
+  ]
 
 const options = [
     {

@@ -47,38 +47,30 @@ const connections = [
 
 const services = [
     {
-        title: 'UID',
-        price: '10.99',
-        totalStock: '50000',
-        currentStock: '999',
-        soldStock: '28579',
-        sourceImg: '/assets/images/uid.png'
+      title: 'What areas do you cover?',
+      description: 'We cover and will attend any business in England Wales or Scotland.'
     },
     {
-        title: 'Protect',
-        price: '10.99',
-        totalStock: '50000',
-        currentStock: '999',
-        soldStock: '28579',
-        sourceImg: '/assets/images/protect.png'
+      title: 'Do you do work abroad?',
+      description: 'Yes we do. We can provide our expertise globally and can also support and manage our services remotely providing we have installed our UniFi equipment.'
     },
     {
-        title: 'Door Access',
-        price: '10.99',
-        totalStock: '50000',
-        currentStock: '999',
-        soldStock: '28579',
-        sourceImg: '/assets/images/door.png'
+      title: 'Do you provide your services to residential customers?',
+      description: 'Yes we do however, the equipment provided is business grade and we do not offer a lower rates for residential customers. As the saying goes, you get what you pay for.'
     },
     {
-        title: 'Alarm System',
-        price: '10.99',
-        totalStock: '50000',
-        currentStock: '999',
-        soldStock: '28579',
-        sourceImg: '/assets/images/system.png'
+      title: 'Is your work guaranteed?',
+      description: 'Yes, all our work is guaranteed. We provide a minimum of 12 months warranty on all supplied products and, for customer who purchase their equipment outright from us, we also provide 12 months free maintenance with discount on our maintenance contracts after. For customer who lease equipment from use, we provide remote management for the duration of the contracted term and maintenance on any supplied network or security equipment.'
+    },
+    {
+      title: 'Can I use your service if someone else has installed our equipment?',
+      description: 'Yes of course, we are happy to resolve any issues or faults you are having with your network that another engineer or company has installed.'
+    },
+    {
+      title: 'Can you provide a wireless network to cover a large area?',
+      description: 'We certainly can. This is one of our specialties. We can cover large outdoor areas, stadiums, hotels, campsites and everything in-between.  We have a viable solution for every situation.'
     }
-]
+  ]
 
 const broadband = [
     {

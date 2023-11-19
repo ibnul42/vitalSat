@@ -71,7 +71,7 @@ const Home = () => {
                   <RiWirelessChargingLine className='h-8 w-8 text-white' />
                   <p className='text_gradient py-1'>Wireless</p>
                 </div>
-                <div className="flex flex-col items-center pl-10">
+                <div className="flex flex-col items-center pl-10 justify-center">
                   {/* <img src="/assets/icons/fibre.png" alt="fiber" className='h-8 w-8 ml-14' /> */}
                   <MdOutlineFiberSmartRecord className='h-8 w-8 text-white' />
                   <p className='text_gradient py-1'>Fibre Optic</p>
@@ -91,7 +91,7 @@ const Home = () => {
                     <img src="/assets/icons/security3.svg" alt="security" className='h-14 w-auto' />
                   </div>
                   <div className="py-2 flex justify-between text-xs text-center">
-                    <div className="flex flex-col items-start pl-4 justify-center">
+                    <div className="flex flex-col pl-4 justify-center items-center">
                       {/* <img src="/assets/icons/ethernet.png" alt="ethernet" className='h-8 w-8' /> */}
                       <SiApachedruid className='h-8 w-8 text-white' />
                       <p className='text_gradient py-1'>UID</p>
