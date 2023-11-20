@@ -5,30 +5,30 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const services = [
     {
-      title: 'What areas do you cover?',
-      description: 'We cover and will attend any business in England Wales or Scotland.'
+        title: 'What areas do you cover?',
+        description: 'We cover and will attend any business in England Wales or Scotland.'
     },
     {
-      title: 'Do you do work abroad?',
-      description: 'Yes we do. We can provide our expertise globally and can also support and manage our services remotely providing we have installed our UniFi equipment.'
+        title: 'Do you do work abroad?',
+        description: 'Yes we do. We can provide our expertise globally and can also support and manage our services remotely providing we have installed our UniFi equipment.'
     },
     {
-      title: 'Do you provide your services to residential customers?',
-      description: 'Yes we do however, the equipment provided is business grade and we do not offer a lower rates for residential customers. As the saying goes, you get what you pay for.'
+        title: 'Do you provide your services to residential customers?',
+        description: 'Yes we do however, the equipment provided is business grade and we do not offer a lower rates for residential customers. As the saying goes, you get what you pay for.'
     },
     {
-      title: 'Is your work guaranteed?',
-      description: 'Yes, all our work is guaranteed. We provide a minimum of 12 months warranty on all supplied products and, for customer who purchase their equipment outright from us, we also provide 12 months free maintenance with discount on our maintenance contracts after. For customer who lease equipment from use, we provide remote management for the duration of the contracted term and maintenance on any supplied network or security equipment.'
+        title: 'Is your work guaranteed?',
+        description: 'Yes, all our work is guaranteed. We provide a minimum of 12 months warranty on all supplied products and, for customer who purchase their equipment outright from us, we also provide 12 months free maintenance with discount on our maintenance contracts after. For customer who lease equipment from use, we provide remote management for the duration of the contracted term and maintenance on any supplied network or security equipment.'
     },
     {
-      title: 'Can I use your service if someone else has installed our equipment?',
-      description: 'Yes of course, we are happy to resolve any issues or faults you are having with your network that another engineer or company has installed.'
+        title: 'Can I use your service if someone else has installed our equipment?',
+        description: 'Yes of course, we are happy to resolve any issues or faults you are having with your network that another engineer or company has installed.'
     },
     {
-      title: 'Can you provide a wireless network to cover a large area?',
-      description: 'We certainly can. This is one of our specialties. We can cover large outdoor areas, stadiums, hotels, campsites and everything in-between.  We have a viable solution for every situation.'
+        title: 'Can you provide a wireless network to cover a large area?',
+        description: 'We certainly can. This is one of our specialties. We can cover large outdoor areas, stadiums, hotels, campsites and everything in-between.  We have a viable solution for every situation.'
     }
-  ]
+]
 
 const options = [
     {
@@ -43,14 +43,14 @@ const options = [
 
 const serviceNetworks = [
     {
-        title: 'Wireless',
-        description: 'Lorem ipsum dolor sit amet con sec tetur. Purus massa sit nu ll a non non bibendum. A mauris ame',
+        title: 'Ethernet Networks',
+        description: 'Fast, reliable, secure & cost effective, these are just a few of the benefits of using VSATUi to supply and support your Unifi or Edge ethernet network.',
         order: '/',
         contact: '/contact'
     },
     {
-        title: 'Fixed Wire',
-        description: 'Lorem ipsum dolor sit amet con sec tetur. Purus massa sit nu ll a non nonLorem ipsum dolor sit amet con sec tetur. Purus massa sit nu ll a non non',
+        title: 'Wireless Networks',
+        description: 'Fast, reliable, secure, small or large scale wireless networking in or outdoors with unbeatable performance.',
         order: '/',
         contact: '/contact'
     }

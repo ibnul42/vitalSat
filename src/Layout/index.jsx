@@ -21,7 +21,7 @@ const Layout = () => {
     <div className={`w-screen h-screen overflow-x-hidden ${open ? 'overflow-y-hidden' : 'overflow-y-auto'} flex flex-col`}>
       <Header open={open} setOpen={setOpen} />
       <div className="flex-1">
-      <ScrollToTop />
+        <ScrollToTop />
         <Content />
       </div>
       <Footer />
