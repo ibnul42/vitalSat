@@ -17,9 +17,10 @@ const Footer = () => {
           <div className="col-span-12 md:col-span-4 lg:col-span-4">
             <h5 className='font-bold text-2xl mb-4 text-[rgba(0,4,46,1)] font-source'>Location</h5>
             <div className="py-2 flex flex-col gap-2">
-              <p>22-24 Napier Road, South Croydon, Surrey, CR0 6EX</p>
-              <a href="mailto:outline@address.com">outline@address.com</a>
-              <a href="tel:+13000000000">+1 30000 00000</a>
+              <p>VitalSAT Ubiquiti-Networks</p>
+              <Link to="https://www.ubiqui-networks.uk" rel="noreferrer" target='_blank' className='hover:underline'>www.ubiqui-networks.uk</Link>
+              <Link to="https://www.vitalsat.co.uk" rel="noreferrer" target='_blank' className='hover:underline'>www.vitalsat.co.uk</Link>
+              <a href="tel:+108081643636">0808 164 3636</a>
             </div>
           </div>
           <div className="col-span-12 md:col-span-3 lg:col-span-4">
