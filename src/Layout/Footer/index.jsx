@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-between text-[rgba(28,28,28,0.75)]">
           <div className="py-2">
-            <p className='text-center'>Copyright VitalSat Installation</p>
+            <p className='text-center'>Copyright VitalSAT Installation</p>
           </div>
           <div className="space-x-5 flex justify-between">
             <Link to='/terms'>Privacy Policy</Link>
