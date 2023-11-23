@@ -123,12 +123,11 @@ const Header = ({ open, setOpen }) => {
       <div className={`hidden xl:block ${whitebackground ? 'bg-white' : 'bg-gradient-to-b'} from-[#01042C] to-[#01032A] -my-1`}>
         <div className={`max-w-7xl mx-auto flex justify-between ${whitebackground ? 'text-black' : 'text-white'}`}>
           <div className='flex gap-5 h-full'>
-            <div className="relative px-5">
-              <div onClick={logoClickHandler} className="absolute left-0 top-1 w-full h-full flex justify-center items-center cursor-pointer">
-                {/* <video className="logo-video mb-2" autoPlay muted loop='true'>
+            <div className="relative px-5 w-28">
+              <div onClick={logoClickHandler} className="absolute left-0 -top-0 w-full h-full flex justify-center items-center cursor-pointer">
+                <video className="logo-video mb-2" autoPlay muted loop='true'>
                   <source src="/assets/animated_logo.mp4" type="video/mp4" />
-                </video> */}
-                <Lottie animationData={Logo} loop={true} className='w-10 h-auto' />
+                </video>
                 {/* <p className='-mt-2 font-extrabold'>Logo</p> */}
               </div>
             </div>
@@ -163,10 +162,9 @@ const Header = ({ open, setOpen }) => {
       </div>
       <div className="xl:hidden bg-[#FFFFFF] py-2 flex flex-col z-50">
         <div className="flex justify-between items-center px-2">
-        <Lottie animationData={Logo} loop={true} className='w-10 h-auto' />
-          {/* <video className="logo-video w-24 -ml-8" autoPlay muted loop='true'>
+          <video className="logo-video w-24 -ml-8" autoPlay muted loop='true'>
             <source src="/assets/animated_logo.mp4" type="video/mp4" />
-          </video> */}
+          </video>
           <div onClick={() => setOpen(!open)} className="bg-[rgba(255,255,255,1)] shadow-[0_0_40px_0_rgba(0,0,0,0.15)] h-9 w-9 rounded-md flex flex-col gap-[6px] justify-center items-center cursor-pointer">
             <div className={`w-5 h-[2px] rounded-full bg-[rgba(32,32,32,1)] transition-all duration-300 ${open && 'rotate-45 w-7'}`}></div>
             <div className={`w-5 h-[2px] rounded-full bg-[rgba(32,32,32,1)] transition-all duration-300 ${open && 'hidden'}`}></div>

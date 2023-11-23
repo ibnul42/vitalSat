@@ -9,7 +9,7 @@ import { AiOutlineAntDesign, AiOutlineDisconnect, AiOutlineSecurityScan } from '
 import { BiCctv } from 'react-icons/bi'
 import { BsDoorOpenFill } from 'react-icons/bs'
 import { SiApachedruid } from 'react-icons/si'
-import { IoWifiSharp } from "react-icons/io5";
+import { IoWifiSharp,IoWifiOutline } from "react-icons/io5";
 
 const services = [
   {
@@ -64,12 +64,12 @@ const Home = () => {
               <div className="grid grid-cols-3 gap-2 text-xs text-center">
                 <div className="flex flex-col items-start pl-4 justify-center">
                   {/* <img src="/assets/icons/ethernet.png" alt="ethernet" className='h-8 w-8' /> */}
-                  <IoWifiSharp className='h-8 w-8 text-white' />
+                  <FaEthernet className='h-8 w-8 text-white' />
                   <p className='text_gradient py-1'>Ethernet</p>
                 </div>
                 <div className="flex flex-col items-center justify-center pl-2">
                   {/* <img src="/assets/icons/wireless.svg" alt="wireless" className='h-8 w-8' /> */}
-                  <RiWirelessChargingLine className='h-8 w-8 text-white' />
+                  <IoWifiSharp className='h-8 w-8 text-white' />
                   <p className='text_gradient py-1'>Wireless</p>
                 </div>
                 <div className="flex flex-col items-center pl-10 justify-center">
@@ -146,11 +146,11 @@ const Home = () => {
               <p className='text_gradient text-xl font-source py-2'>Network Installation</p>
               <div className="grid grid-cols-3 gap-5 text-xs text-center">
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
-                  <IoWifiSharp className='h-8 w-8 text-white' />
+                  <FaEthernet className='h-8 w-8 text-white' />
                   <p className='text_gradient py-1'>Ethernet</p>
                 </div>
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
-                  <RiWirelessChargingLine className='h-8 w-8 text-white' />
+                  <IoWifiSharp className='h-8 w-8 text-white' />
                   <p className='text_gradient py-1'>Wireless</p>
                 </div>
                 <div className="px-5 py-4 bg-[#011148] flex flex-col items-center justify-center">
